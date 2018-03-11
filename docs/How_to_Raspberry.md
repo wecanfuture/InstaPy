@@ -46,7 +46,7 @@ Pi2.2 sudo dpkg -i firefox_49.0+build4-0ubuntu0.14.04.1_armhf.deb
 
 > Assuming you've modified quickstart.py to your liking and added your Instagram login to instapy.py
 
-28. sudo xvfb-run python quickstart.py
+28. sudo xvfb-run -a python quickstart.py
 >I installed TMUX to help run this headless, so that I can disconnect from the session and have the program continue to run on the rpi3
 
 29. sudo apt-get install tmux (more info found here: https://github.com/tmux/tmux)
