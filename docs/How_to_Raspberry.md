@@ -24,7 +24,7 @@ _NOTE: If you add an empty file named ssh to the boot directory, ssh will be ena
 
 1. Switch to the root user `sudo su`
 1. Update apt source lists `echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list`
-1. Update `apt-get update`
+1. Update `apt-get update --allow-unauthenticated`
 1. Install the browser `apt-get install chromium-browser`
 1. Install the driver `apt-get install chromedriver`
 1. Move the driver into the InstaPy/assets directory `mv /usr/bin/chromedriver /path/to/InstaPy/assets/chromedriver`
@@ -62,7 +62,7 @@ Pi2.2 sudo dpkg -i firefox_49.0+build4-0ubuntu0.14.04.1_armhf.deb
 
 > Assuming you've modified quickstart.py to your liking and added your Instagram login to instapy.py
 
-28. sudo xvfb-run python quickstart.py
+28. sudo xvfb-run python -a quickstart.py
 >I installed TMUX to help run this headless, so that I can disconnect from the session and have the program continue to run on the rpi3
 
 29. sudo apt-get install tmux (more info found here: https://github.com/tmux/tmux)
